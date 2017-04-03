@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <title>Untitled Document</title>
+	</head>
+
+	<body>
+	    <style type="text/css">
+	            .rouge {
+		                color: red;
+				        }
+					        
+						        .vert {
+							            color: green;
+								            }
+									            
+										            .petit {
+											                font-size: 100%;
+													        }
+														        
+															        .grand {
+																            font-size: 250%;
+																	            }
+																		        </style>
+																			    <span id="jean" class="rouge grand">Jean</span>
+
+																			        <span id="pierre">Pierre</span>
+
+																				    <span id="paul" class="vert grand">Paul</span>
+
+																				        <span id="julia">Julia</span>
+
+																					    <span id="eric" class="vert">Eric</span>
+
+																					        <span id="kevin">Kévin</span>
+
+																						    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+																						        <script>
+																							        $(document).ready(function () {
+																								            $('#julia').addClass('rouge');
+																									                $('#kevin').addClass('rouge');
+																											            $('#jean').removeClass('rouge');
+																												                $('#eric').removeClass('vert').addClass('rouge');
+																														        });
+																															    </script>
+
+																															    </body>
+
+																															    </html>
