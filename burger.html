@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/burger.css">
+    <meta charset="UTF-8">
+    <title>menu berger</title>
+</head>
+<body>
+<div class="logo"><img src="img-layout/logo.png"></div>
+<h1>site avec menu burger</h1>
+<header>
+<div class="menubr">
+        <img id="hamb-button" src="img-layout/menubg.png">
+        <div id="hamb">
+            <div id="hamb-content">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home_page.html" class="title1">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="liste.html" class="title2">Page liste</a>
+                        </li>
+                        <li>
+                            <a href="#" class="title3">produit</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="title5">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="hamb-overlay"></div>
+</header>
+<script>
+    /*-----burger----*/
+
+    var nav = document.querySelector('#hamb');
+    /*-var sidebar = document.querySelector('#hamb-sidebar');-*/
+    var btn =  document.querySelector('#hamb-button');
+    var overlay = document.querySelector('#hamb-overlay');
+    var navon = 'hamb-actif';
+
+    /*-sidebar.innerHTML = content.innerHTML;-*/
+
+
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+
+        nav.classList.toggle(navon);
+        overlay.classList.toggle(navon);
+
+    });
+
+    overlay.addEventListener('click', function(e){
+        e.preventDefault();
+
+        nav.classList.remove(navon);
+        overlay.classList.remove(navon);
+
+    });
+
+
+</script>
+
+</body>
+</html>
