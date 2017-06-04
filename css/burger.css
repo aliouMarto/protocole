@@ -1,0 +1,138 @@
+body{
+    background-color: #222222;
+}
+
+
+
+
+
+nav ul li{
+    width: 80%;
+    display: inline;
+    position: relative;
+    top: 1px;
+    left: 19.3%;
+    margin: 0;
+}
+
+nav ul li a{
+    width: auto;
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-left: 1px solid #fff;
+    margin: -2px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 68px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    font-weight: 900;
+    border-bottom:0;
+    font-family: "teko", sans-serif;
+}
+
+#hamb-button{
+    display: block;
+}
+
+
+    /*-------nav---*/
+
+
+    nav ul li a {
+        width: 16%;
+        font-size: 32px;
+        text-decoration: none;
+        color: #fff;
+        border: 0;
+        margin: -2px;
+        display: block;
+        vertical-align: middle;
+        height: 68px;
+        text-align: center;
+        padding: 0;
+        position: relative;
+        font-weight: 900;
+        border-bottom: 0;
+    }
+
+    .menubr {
+        display: block;
+    }
+
+    #hamb {
+        z-index: 3200;
+        position: fixed;
+        background-color: #000000;
+        width: 55%;
+        max-width: 55%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transition: transform 1s ease;
+    }
+
+    #hamb-content {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 10%;
+    }
+
+    #hamb-overlay {
+        display: none;
+        position: fixed;
+        z-index: 3000;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        cursor: pointer;
+    }
+
+    #hamb-button {
+        display: block;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        max-width: 35px;
+        min-width: 35px;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 3500;
+    }
+
+    img #hamb-button {
+        display: block;
+        cursor: pointer;
+        width: 150%;
+        height: 150%;
+        position: fixed;
+        right: 25%;
+    }
+
+    #hamb-overlay.hamb-actif {
+        display: block;
+    }
+
+    #hamb.hamb-actif {
+        transform: translateX(3%);
+        transition: transform 1s ease;
+
+    }
+
+
+
+
+
